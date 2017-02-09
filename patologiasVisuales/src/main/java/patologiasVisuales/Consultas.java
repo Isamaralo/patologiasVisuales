@@ -9,7 +9,6 @@ import java.util.List;
 
 public class Consultas {
 	
-	
 	public static final String CONSULTA_SINTOMAS_POR_PATOLOGIA = "SELECT * FROM Sintomas WHERE id_sint IN (SELECT id_sint FROM Causas WHERE id_patol IN (SELECT id_patol FROM Patologias WHERE nom_patol = '";
 	public static final String CONSULTA_LISTAR_PATOLOGIAS = "SELECT * FROM Patologias";
 	public static final String CONSULTA_LISTAR_SINTOMAS = "SELECT * FROM Sintomas";

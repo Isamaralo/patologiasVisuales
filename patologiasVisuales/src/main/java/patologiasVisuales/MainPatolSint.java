@@ -68,33 +68,33 @@ public class MainPatolSint {
   	      lista_patologias = Consultas.listarPatologias(stmt, conn);
   	      HashMap<Patologia, List<Sintoma>> hm = new HashMap<Patologia, List<Sintoma>>();
   	      
-  	      /*for (Patologia patologia : lista_patologias) {
+  	      for (Patologia patologia : lista_patologias) {
 			lista_sintomas = Consultas.buscarSintomasPorPatologia(conn, patologia.getNombre());
  	    	hm.put(patologia, lista_sintomas);
  	    	System.out.println(patologia+" = "+hm.get(patologia));
-  	      }*/
-
+  	      }
+  	      /*
 	      long tiempoInicial = System.currentTimeMillis();
 	      System.out.println(tiempoInicial);
-  	      /* Sin acceder a la base de datos */
+  	      /* Sin acceder a la base de datos *//*
   	      int id = 3;
   	      int i = 0;
   	      while(i<lista_patologias.size() && lista_patologias.get(i).getId()!=id)
   	      {
   	    	  i++;
   	      }
-  	      System.out.println(lista_patologias.get(i).getNombre());
+  	      System.out.println(lista_patologias.get(i).getNombre());*/
   	      /* Accediendo a la base de datos */
   	      /*Patologia p = Consultas.buscarPatologiasPorId(stmt, conn, 3);
   	      System.out.println(p.getNombre());*/
-  	      
+  	      /*
   	      long tiempoFinal = System.currentTimeMillis();
   	      System.out.println(tiempoFinal);
   	      
   	      long tiempoTranscurrido = tiempoFinal - tiempoInicial;
   	      System.out.println(tiempoTranscurrido);
   	      //System.currentTimeMillis();
-  	      
+  	      */
 			
 		}
 		catch(Exception e)

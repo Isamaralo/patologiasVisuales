@@ -27,5 +27,4 @@ public class Sintoma {
 		// TODO Auto-generated method stub
 		return this.descripcion;
 	}
-	
 }
